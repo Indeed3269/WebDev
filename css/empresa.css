@@ -1,0 +1,185 @@
+/* Estilos generales */
+:root {
+    font-size: 16px;
+    --primary-clr: #f4f4f4;
+    --secondary-clr: #333;
+    --highlight-focus-clr: #5ec061;
+    --highlight-darker-clr: #388f3b;
+    --highlight-clr: #4CAF50;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-clr);
+    color: var(--secondary-clr);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlight-clr);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(var(--highlight-focus-clr), var(--highlight-clr), var(--highlight-focus-clr));
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.headerSubtext {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-clr);
+    gap: 15px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--highlight-clr);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--highlight-focus-clr);
+}
+
+/* Main */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--highlight-clr);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Servicios */
+.box-servicio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    color: var(--highlight-clr);
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Testimonios */
+.testimonio-space {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonio-space .card {
+    background-color: var(--primary-clr);
+    border: 1px solid var(--highlight-clr);
+}
+
+.testimonio-space .card p {
+    font-style: italic;
+}
+
+.testimonio-space .card .author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--highlight-darker-clr);
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact .btn {
+    display: inline-block;
+    background-color: var(--highlight-clr);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: var(--highlight-darker-clr);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-clr);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--highlight-clr);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--highlight-focus-clr);
+}

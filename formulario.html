@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    
+</head>
+<body>
+    <header>
+        <span class="header-txt">
+            <h1>Taqueros programadores el Rorro</h1>
+            <p class="headerSubtext">Equipo de desarrollo web enfocado en ofrecer soluciones efectivas para nuestros clientes</p>
+        </span>
+    </header>
+    <nav class="navegacion">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#48752C"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+            <p>Inicio</p>
+        </a>
+        <a href="pagina2.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#48752C"><path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg>
+            <p>Nosotros</p>
+        </a>
+        <a href="formulario.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#48752C"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"/></svg>
+            <p>Formulario</p>
+        </a>
+        <a href="empresa.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#48752C"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"/></svg>
+            <p>Empresa</p>
+        </a>
+    </nav>
+    
+    
+    <!-- Inicio del formulario -->
+    
+    <form class="js-registro-personas">
+        <p>Registro de voluntarios:</p>
+        <!-- Imagen -->
+        <img src="https://cdn.viewpoint.com/blog/2022/10/Ramping-Up-Construction-Workforce-Blog-CTA.jpg" alt="Imagen de ejemplo" width="550" height="350">
+        
+        <!-- Caja de texto -->
+        <span class="datos">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><!-- Campo para ingresar texto -->
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            
+            <!-- Edad -->
+            <label for="edad">Fecha de nacimiento</label>
+            <input type="date" id="fechanac" name="fechanac">
+             
+            <!-- Lista desplegable -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="sel">Seleccione</option>
+                <option value="mx">México</option>
+                <option value="us">Estados Unidos</option>
+                <option value="ca">Canadá</option>
+                <option value="ch">China</option>
+                <option value="jp">Japon</option>
+            </select><!-- Lista de opciones para seleccionar un país -->
+    
+    
+            <!-- Opciones (radio buttons) -->
+            <div class="seccion-estudios">
+                <p>Nivel de estudios:</p>
+                <span>
+                    <input type="radio" id="Secundaria" name="estudios" value="Secundaria">
+                    <label for="Secundaria">Secundaria</label>
+                </span>
+                    <span><input type="radio" id="Perparatoria" name="estudios" value="Perparatoria">
+                    <label for="Perparatoria">Perparatoria</label><!-- Opciones para seleccionar el género -->
+                </span>
+                <span>
+                    <input type="radio" id="Universidad" name="estudios" value="Universidad">
+                    <label for="Universidad">Universidad</label><!-- Opciones para seleccionar el género -->
+                </span>
+                <span>
+                    <input type="radio" id="Posgrado" name="estudios" value="Posgrado">
+                    <label for="Posgrado">Posgrado</label><!-- Opciones para seleccionar el género -->
+                </span>
+            </div>
+        </span>
+        
+
+
+        <!-- Botones -->
+        <button type="submit">Enviar</button><!-- Botón para enviar el formulario -->
+        <button type="reset">Restablecer</button><!-- Botón para restablecer el formulario -->
+
+        
+        
+
+        <!-- Tabla -->
+        <table class="js-practica2-tabla" border="3">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+                <th>Estudios</th>
+            </tr>
+            <tr>
+                <td>Daniel Rodriguez</td>
+                <td>27</td>
+                <td>mx</td>
+                <td>Universidad</td>
+            </tr>
+            <tr>
+                <td>Latin Lover</td>
+                <td>45</td>
+                <td>mx</td>
+                <td>Posgrado</td>
+            </tr>
+            <tr>
+                <td>Juan Merienda</td>
+                <td>86</td>
+                <td>us</td>
+                <td>Secundaria</td>
+            </tr>
+            <tr>
+                <td>John Cena</td>
+                <td>52</td>
+                <td>ch</td>
+                <td>Perparatoria</td>
+            </tr>
+            <tr>
+                <td>Jose Perez</td>
+                <td>12</td>
+                <td>ca</td>
+                <td>Secundaria</td>
+            </tr>
+            <tr>
+                <td>Shrek</td>
+                <td>60</td>
+                <td>us</td>
+                <td>Posgrado</td>
+            </tr>
+            
+            
+        </table><!-- Tabla con datos de ejemplo -->
+
+        
+        
+        
+    </form>
+    <!-- pie de pagina-->
+    <footer>
+        <p>2025 Taqueros el Rorro. Todos los derechos reservados.</p>
+        <a href="mailto:rcoronadaniel@gmail.com">Enviar correo electronico</a>
+        <a href="tel:+1234567890">Llamar por telefono</a>
+    </footer>
+    <script src="js/registro-personas.js"></script>
+</body>
+</html>
+
