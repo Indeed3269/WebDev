@@ -62,7 +62,9 @@ main {
 /* contenedor left */
 .container-body-left img{
     transition: 0.4s;
-    width: 65%;
+    max-width: 65%;
+    border: 5px solid var(--highlight-clr);
+    border-radius: 50%;
 }
 .cblp1 {
     color: var(--highlight-clr);
@@ -75,7 +77,8 @@ main {
     font-weight: 500;
 }
 .container-body-left img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(20px);
+    border: 1px solid var(--highlight-darker-clr);
 }
 /* contenedor right*/
 .datosbox {
@@ -96,17 +99,21 @@ main {
 }
 .datosbox-contenido img,
 .datosbox-contenido p {
-    transition: opacity 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .datosbox-contenido p {
     position: absolute;
     top: 0;
     opacity: 0;
     text-align: center;
+    transform: translateY(10px);
 }
 .datosbox-contenido:hover img {
+    transform: translateY(-10px);
     opacity: 0;
 }
 .datosbox-contenido:hover p {
+    transform: translateY(0px);
     opacity: 1;
+    
 }
