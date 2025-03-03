@@ -1,5 +1,8 @@
 header img {
-    max-width: 200px;
+    max-width: 120px;
+}
+body {
+    background-color: var(--secondary-clr);
 }
 main {
     background-color: var(--highlight-clr);
@@ -93,7 +96,7 @@ main {
 }
 .datosbox-contenido img,
 .datosbox-contenido p {
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .datosbox-contenido p {
     position: absolute;
