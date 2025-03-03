@@ -48,6 +48,8 @@ header span h1:hover {
     letter-spacing: 1px;
     word-spacing: 1px;
 }
+/*#endregion*/
+/*#region nav*/
 nav{
     display: flex;
     justify-content: center;
@@ -56,6 +58,7 @@ nav{
     width: 100vw;
     position: sticky;
     top: 0;
+    z-index:1000;
 }
 nav a {
     display: flex;
